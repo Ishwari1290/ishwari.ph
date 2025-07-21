@@ -1,0 +1,36 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: sans-serif; line-height: 1.6; color: #333; }
+header {
+  background: #005f73;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+header nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+section {
+  padding: 2rem;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.card {
+  background: #e0fbfc;
+  padding: 1rem;
+  border-radius: 8px;
+}
+footer {
+  background: #005f73;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+@media (max-width: 600px) {
+  header nav { display: flex; flex-direction: column; }
+  header nav a { margin: .5rem 0; }
+}
